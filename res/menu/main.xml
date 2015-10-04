@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@+id/ChangeUserName" android:orderInCategory="100" android:showAsAction="never" android:title="更改用户名" /><item android:id="@+id/Exit" android:title="退出游戏" android:orderInCategory="104"></item>
+    <item android:id="@+id/Share" android:title="分享游戏" android:orderInCategory="101"></item>
+    <item android:id="@+id/Setting" android:title="设置" android:orderInCategory="103"></item>
+    <item android:id="@+id/Help" android:title="帮助" android:orderInCategory="102"></item>
+    
+
+</menu>

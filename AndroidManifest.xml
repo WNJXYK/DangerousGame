@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="cn.Arthur.Game.DangerousGame">
+
+    <uses-sdk android:minSdkVersion="4" android:targetSdkVersion="18"/>
+
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="cn.Arthur.Game.DangerousGame.MainActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        
+        <activity android:label="@string/RankList_name" android:name="cn.Arthur.Game.DangerousGame.RankListActivity" android:screenOrientation="portrait">
+        </activity>
+        
+    	<meta-data android:name="UMENG_APPKEY" android:value="53f488fbfd98c5d11c003763"/>
+		<activity android:configChanges="orientation|keyboard" android:launchMode="singleTask" android:name="com.umeng.socialize.view.ShareActivity" android:noHistory="true" android:theme="@style/Theme.UMDialog" android:windowSoftInputMode="stateVisible|adjustResize"/>
+		<activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name=".wxapi.WXEntryActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+		<activity android:configChanges="orientation|keyboard" android:launchMode="singleTask" android:name="com.tencent.tauth.AuthActivity" android:noHistory="true">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+				<category android:name="android.intent.category.BROWSABLE"/>
+				<data android:scheme="1102045064"/>
+			</intent-filter>
+		</activity>
+		<activity android:name="com.tencent.connect.common.AssistActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+		<activity android:configChanges="orientation|navigation|keyboardHidden" android:name="com.renn.rennsdk.oauth.OAuthActivity"/>
+	
+		<activity
+    		android:name="net.youmi.android.AdBrowser"
+    		android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+    		android:theme="@android:style/Theme.Light.NoTitleBar" >
+		</activity>
+		<service
+   			android:name="net.youmi.android.AdService"
+    		android:exported="false" >
+		</service>
+		<receiver
+    		android:name="net.youmi.android.AdReceiver" >
+    		<intent-filter>
+        		<action android:name="android.intent.action.PACKAGE_ADDED" />
+        		<data android:scheme="package" />
+    		</intent-filter>
+		</receiver>
+		
+		<meta-data android:name="YOUMI_CHANNEL" android:value="10030" > </meta-data>
+		
+	</application>
+    
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+	<uses-permission android:name="android.permission.GET_TASKS"/>
+	<uses-permission android:name="android.permission.SET_DEBUG_APP"/>
+	<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+	<uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+	<uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+	<uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+	
+</manifest>

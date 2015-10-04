@@ -1,0 +1,43 @@
+# view AndroidManifest.xml #generated:7
+-keep class cn.Arthur.Game.DangerousGame.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:15
+-keep class cn.Arthur.Game.DangerousGame.RankListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:20
+-keep class cn.Arthur.Game.DangerousGame.wxapi.WXEntryActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:30
+-keep class com.renn.rennsdk.oauth.OAuthActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:29
+-keep class com.tencent.connect.common.AssistActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:21
+-keep class com.tencent.tauth.AuthActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:19
+-keep class com.umeng.socialize.view.ShareActivity { <init>(...); }
+
+# view res/layout/umeng_socialize_post_share.xml #generated:2
+# view sw550dp-large\res/layout-sw550dp-large/umeng_socialize_post_share.xml #generated:2
+-keep class com.umeng.socialize.view.wigets.KeyboardListenRelativeLayout { <init>(...); }
+
+# view res/layout/umeng_socialize_at_view.xml #generated:21
+-keep class com.umeng.socialize.view.wigets.SearchBox { <init>(...); }
+
+# view res/layout/umeng_socialize_at_view.xml #generated:38
+-keep class com.umeng.socialize.view.wigets.SectionListView { <init>(...); }
+
+# view res/layout/umeng_socialize_at_view.xml #generated:47
+-keep class com.umeng.socialize.view.wigets.SlideBar { <init>(...); }
+
+# view AndroidManifest.xml #generated:32
+-keep class net.youmi.android.AdBrowser { <init>(...); }
+
+# view AndroidManifest.xml #generated:41
+-keep class net.youmi.android.AdReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:37
+-keep class net.youmi.android.AdService { <init>(...); }
+
